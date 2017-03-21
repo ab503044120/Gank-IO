@@ -1,4 +1,4 @@
-package org.huihui.gank.view;
+package org.huihui.gank.base.view;
 
 import android.databinding.DataBindingUtil;
 import android.databinding.ViewDataBinding;

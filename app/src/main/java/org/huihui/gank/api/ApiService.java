@@ -3,6 +3,7 @@ package org.huihui.gank.api;
 import org.huihui.gank.MeiZiReponse;
 
 import retrofit2.http.GET;
+import retrofit2.http.Path;
 import rx.Observable;
 
 /**
@@ -10,6 +11,6 @@ import rx.Observable;
  */
 
 public interface ApiService {
-    @GET("http://gank.io/api/data/福利/10/1")
-    Observable<MeiZiReponse> getMeiZi(int page);
+    @GET("data/福利/{count}/{page}")
+    Observable<MeiZiReponse> getMeiZi(@Path("count")int count,@Path("page") int page);
 }

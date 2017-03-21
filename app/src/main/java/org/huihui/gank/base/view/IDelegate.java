@@ -1,4 +1,4 @@
-package org.huihui.gank.view;
+package org.huihui.gank.base.view;
 
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;

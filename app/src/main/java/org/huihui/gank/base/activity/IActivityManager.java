@@ -1,4 +1,4 @@
-package org.huihui.gank.activity;
+package org.huihui.gank.base.activity;
 
 import android.app.Activity;
 

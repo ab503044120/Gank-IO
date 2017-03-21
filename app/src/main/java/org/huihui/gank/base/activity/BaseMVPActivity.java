@@ -1,4 +1,4 @@
-package org.huihui.gank.activity;
+package org.huihui.gank.base.activity;
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
@@ -11,8 +11,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
-import org.huihui.gank.view.IDelegate;
+import org.huihui.gank.base.view.IDelegate;
 
 import java.lang.reflect.ParameterizedType;
 
@@ -169,6 +170,10 @@ public abstract class BaseMVPActivity<D extends IDelegate> extends AppCompatActi
 //        }
 //    }
 
+    public void showToast(String s){
+        Toast.makeText(getActivity(), s, Toast.LENGTH_SHORT).show();
+
+    }
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
